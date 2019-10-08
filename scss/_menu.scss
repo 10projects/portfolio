@@ -110,12 +110,16 @@
     .nav-link {
         display: inline-block;
         position: relative;
-        font-size: 2rem;
+        font-size: 1rem;
         text-transform: Lowercase;
         padding: 1rem 0;
         color: #fff;
         text-decoration: none;
         @include easeOut;
+
+        &:hover {
+            color: $secondary-color;
+        }
 
     }
 }

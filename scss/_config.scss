@@ -1,7 +1,7 @@
 $primary-color: #333;
 $secondary-color:#3273dc;
 $show-home-image: true;
-$home-image: url(../img/bg.jpg);
+$home-image: url(../img/tech-splash.jpg);
 $background-opacity: 0.9;
 
 
@@ -29,5 +29,30 @@ $background-opacity: 0.9;
 
             }
         }
+    }
+}
+
+//Media query mixins
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+        @content;
     }
 }
