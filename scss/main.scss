@@ -19,15 +19,16 @@ body {
 
 h1, h2, h3 {
     margin: 0;
-    font-weight: 400;
+    
 
     &.lg-heading {
-        font-size: 6rem;
+        font-size: 3rem;
+        font-family: 'Roboto', sans-serif;
+
     }
     &.sm-heading {
         margin-bottom: 2rem;
-        padding: 0.2rem 1.0rem;
-        background:rgba(lighten($primary-color, 2), 0.5);
+        font-weight: 100;
     }
 }
 
@@ -72,3 +73,4 @@ main {
         }
     }
 }
+
